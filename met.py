@@ -16,9 +16,7 @@ def main():
 		object_IDs = load_object_list()
 
 	object_IDs, object_ID, image_url, title, artist = get_image_data(object_IDs)
-
 	update_object_list(object_IDs)
-
 	twitter_text = create_twitter_text(title, artist)
 
 	if os.path.exists(TEMP_PHOTO):
